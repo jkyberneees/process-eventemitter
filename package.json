@@ -1,17 +1,18 @@
 {
   "name": "process-eventemitter",
   "description": "Implementation of the 'distributed-eventemitter' module API for the browser or single node processes!",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "keywords": [
     "event",
     "emitter",
     "messaging",
-    "message"
+    "message",
+    "queue",
+    "jobs"
   ],
   "author": "Rolando Santamaria Maso <kyberneees@gmail.com>",
   "contributors": [],
   "dependencies": {
-    "co": "^4",
     "eventemitter2": "^1",
     "uuid": "^2"
   },
@@ -20,15 +21,15 @@
     "chai": "^3",
     "mocha": "^2",
     "mocha-traceur": "^2",
-    "traceur": "^0"
+    "traceur": "^0",
+    "co": "^4"
   },
   "main": "main.js",
   "repository": "git://github.com/jkyberneees/process-eventemitter",
   "files": [
     "LICENSE",
-    "Readme.md",
-    "main.js",
-    "tests.js"
+    "README.md",
+    "main.js"
   ],
   "scripts": {
     "test": "mocha tests --compilers js:mocha-traceur"
